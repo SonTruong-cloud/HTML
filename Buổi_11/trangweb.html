@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Innovations - Thanh Sơn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #2c3e50;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: #ecf0f1 !important;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            color: #3498db !important;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/IT.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .about-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        .about-section h2 {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .gallery-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+        .gallery-card p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            padding: 0 15px 15px;
+        }
+        .gallery-title {
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .facts-section {
+            padding: 60px 0;
+            background-color: #e9ecef;
+        }
+        .facts-section h2 {
+            color: #2c3e50;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .fact-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            height: 100%;
+            text-align: center;
+        }
+        .cta-section {
+            padding: 60px 0;
+            background: linear-gradient(45deg, #3498db, #2c3e50);
+            color: #fff;
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #2980b9;
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+        .modal-content {
+            border-radius: 10px;
+        }
+        .modal-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            .gallery-card img {
+                height: 150px;
+            }
+            .gallery-card h2 {
+                font-size: 1.2rem;
+            }
+            .modal-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Thanh Sơn IT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <h1>Khám Phá Thế Giới Công Nghệ Thông Tin</h1>
+                <p>Trương Thanh Sơn - Mang đến giải pháp công nghệ tiên tiến và sáng tạo</p>
+                <a href="#gallery" class="btn btn-primary btn-lg">Bắt Đầu Ngay</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Về Chúng Tôi</h2>
+                <p>
+                    Chào mừng bạn đến với Thanh Sơn IT! Chúng tôi là đội ngũ đam mê công nghệ, cung cấp các giải pháp tiên tiến trong Big Data, Thiết kế Web, An ninh mạng, Phân tích dữ liệu, Robot và Dịch vụ tư vấn IT. Dẫn đầu bởi Trương Thanh Sơn, sứ mệnh của chúng tôi là giúp khách hàng tận dụng công nghệ để đạt được thành công vượt bậc.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="container my-5">
+            <h4 class="gallery-title">Dịch Vụ Công Nghệ Thông Tin</h4>
+            <div class="row">
+                <!-- Gallery Item 1 -->
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#itModal" data-it="Big Data" data-img="https://images.unsplash.com/photo-1551288049-b1f3a0c3f4e9" data-desc="Big Data giúp xử lý và phân tích khối lượng dữ liệu khổng lồ để đưa ra quyết định kinh doanh thông minh.">
+                        <img src="img/ai.jpg" alt="Big Data">
+                        <h2>Big Data</h2>
+                        <p>Phân tích dữ liệu lớn để tối ưu hóa quyết định kinh doanh.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#itModal" data-it="Thiết Kế Web" data-img="https://images.unsplash.com/photo-1461749288671-6e95175283f0" data-desc="Thiết kế web chuyên nghiệp, hiện đại và tối ưu hóa trải nghiệm người dùng.">
+                        <img src="img/AIi.jpeg" alt="Web Design">
+                        <h2>Thiết Kế Web</h2>
+                        <p>Tạo ra các website đẹp mắt và thân thiện với người dùng.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#itModal" data-it="An Ninh Mạng" data-img="https://images.unsplash.com/photo-1563986768494-4dee8bc3a11c" data-desc="Bảo vệ hệ thống và dữ liệu khỏi các mối đe dọa mạng với các giải pháp an ninh tiên tiến.">
+                        <img src="img/Aiii.jpg" alt="Cybersecurity">
+                        <h2>An Ninh Mạng</h2>
+                        <p>Bảo vệ dữ liệu và hệ thống khỏi các mối đe dọa mạng.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#itModal" data-it="Phân Tích Dữ Liệu" data-img="https://images.unsplash.com/photo-1551288049-b1f3a0c3f4e9" data-desc="Phân tích dữ liệu chuyên sâu để khám phá xu hướng và tối ưu hóa hiệu suất.">
+                        <img src="img/bác sĩ.webp" alt="Data Analysis">
+                        <h2>Phân Tích Dữ Liệu</h2>
+                        <p>Khám phá xu hướng và tối ưu hóa hiệu suất từ dữ liệu.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#itModal" data-it="Robot" data-img="https://images.unsplash.com/photo-1516321310764-8d9c6c13a934" data-desc="Phát triển robot thông minh để tự động hóa quy trình và nâng cao hiệu quả.">
+                        <img src="img/images.jpg" alt="Robotics">
+                        <h2>Robot</h2>
+                        <p>Tự động hóa quy trình với công nghệ robot tiên tiến.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="gallery-card" data-bs-toggle="modal" data-bs-target="#itModal" data-it="Tư Vấn IT" data-img="https://images.unsplash.com/photo-1552664730-d307ca884978" data-desc="Cung cấp dịch vụ tư vấn IT chuyên nghiệp để tối ưu hóa hạ tầng công nghệ.">
+                        <img src="img/images (1).jpg" alt="IT Consulting">
+                        <h2>Tư Vấn IT</h2>
+                        <p>Hỗ trợ doanh nghiệp tối ưu hóa giải pháp công nghệ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section class="facts-section">
+            <div class="container">
+                <h2>Sự Thật Thú Vị Về Công Nghệ</h2>
+                <div class="row">
+                    <div class="col-12 col-md-4 p-2">
+                        <div class="fact-card">
+                            <h4>Dữ Liệu Toàn Cầu</h4>
+                            <p>Ước tính đến năm 2025, thế giới sẽ tạo ra 175 zettabyte dữ liệu mỗi năm!</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-2">
+                        <div class="fact-card">
+                            <h4>Tấn Công Mạng</h4>
+                            <p>Mỗi 39 giây, có một cuộc tấn công mạng xảy ra trên toàn cầu.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 p-2">
+                        <div class="fact-card">
+                            <h4>Tốc Độ Internet</h4>
+                            <p>Tốc độ trung bình của 5G có thể đạt tới 1 Gbps, nhanh gấp 10 lần 4G.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Tham Gia Hành Trình Công Nghệ</h2>
+                <p>Khám phá các giải pháp IT tiên tiến và cùng chúng tôi định hình tương lai!</p>
+                <a href="#contact" class="btn btn-light btn-lg">Liên Hệ Ngay</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer text-center text-lg-start">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block">
+                    <span>Kết nối với chúng tôi qua mạng xã hội:</span>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="me-4"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="me-4"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-4"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-4"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="me-4"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>Thanh Sơn IT
+                            </h6>
+                            <p>
+                                Cung cấp các giải pháp công nghệ tiên tiến cho tương lai số hóa.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Dịch Vụ</h6>
+                            <p><a href="#gallery" class="text-reset">Big Data</a></p>
+                            <p><a href="#gallery" class="text-reset">Thiết Kế Web</a></p>
+                            <p><a href="#gallery" class="text-reset">An Ninh Mạng</a></p>
+                            <p><a href="#gallery" class="text-reset">Tư Vấn IT</a></p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Liên Kết</h6>
+                            <p><a href="#about" class="text-reset">Về Chúng Tôi</a></p>
+                            <p><a href="#" class="text-reset">Blog</a></p>
+                            <p><a href="#" class="text-reset">FAQ</a></p>
+                            <p><a href="#contact" class="text-reset">Hỗ Trợ</a></p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                            <p><i class="fas fa-home me-3"></i> 99 Tô Hiến Thành, Việt Nam</p>
+                            <p><i class="fas fa-envelope me-3"></i> thanhsonpnv27@gmail.com</p>
+                            <p><i class="fas fa-phone me-3"></i> (+84) 038 700 2627</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2025 Thanh Sơn:
+                <a class="text-reset fw-bold" href="#">truongthanhson.com</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for IT Details -->
+    <div class="modal fade" id="itModal" tabindex="-1" aria-labelledby="itModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-img" src="" alt="">
+                    <p class="mt-3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.gallery-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const itField = this.getAttribute('data-it');
+                const img = this.getAttribute('data-img');
+                const desc = this.getAttribute('data-desc');
+                
+                document.getElementById('itModalLabel').textContent = itField;
+                document.querySelector('.modal-img').src = img;
+                document.querySelector('.modal-body p').textContent = desc;
+            });
+        });
+    </script>
+</body>
+</html>

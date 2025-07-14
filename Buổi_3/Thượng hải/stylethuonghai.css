@@ -1,0 +1,17 @@
+h1{
+	color: darkorange; margin-bottom: 0; font-size: 25
+}
+p.vien{
+	outline-style: double;
+	outline-color: darkorange
+	font-size:25;
+	color: darkorange
+}
+p.indam{
+	background-color:orange; color: white;
+}
+p.canhphai{}
+mark{background-color: yellow;}
+font.phongto{font-size:50px; color: darkred;}
+font.indo{color: red;}
+body{margin-left:50; margin-right:50;}

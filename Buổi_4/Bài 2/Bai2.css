@@ -1,0 +1,13 @@
+table {
+			width: 45%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+th, td {
+            border: 2px solid Black; 	
+            text-align: center;
+            padding: 8px;
+        }
+th {
+            background-color: yellow;
+        }

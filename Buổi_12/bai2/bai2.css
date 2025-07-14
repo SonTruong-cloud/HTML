@@ -1,0 +1,27 @@
+/* Bước 3: Tạo file CSS */
+.chuyen-slide {
+    width: 1000px;
+    border-radius: 20px; /* bo góc */
+    position: relative; /* định vị trí theo thứ tự trong code */
+    margin: auto;
+}
+
+img {
+    width: 1000px;
+    height: 400px;
+}
+.chuyen-slide .fa-circle-chevron-left {
+    position: absolute; /*định vị trí theo khung hình ảnh*/
+    top: 50%;
+    left: 40px;
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.chuyen-slide .fa-circle-chevron-right {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    font-size: 30px;
+    color: blueviolet;
+}

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+.nav-bar {
+    display: flex;
+    background-color: darkblue; 
+  }
+  
+.nav-item {
+    padding: 15px 20px;
+    color: white;
+    border-right: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+.nav-item:last-child {
+    border-right: none;
+  }
+  
+.nav-item.active {
+    background-color: red;
+    font-weight: bold;
+  }
+  
+.nav-item:hover {
+    background-color: red;
+  }
+.nav-item>

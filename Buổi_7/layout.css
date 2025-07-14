@@ -1,0 +1,33 @@
+#header{
+    background: yellow;
+    height: 100px;
+}
+#menu{
+    background: gray;
+    height: 100px;
+}
+#main_content{
+    background: pink;
+}
+#footer{
+    background: red;
+    height: 150px;
+}
+#left_sidebar{
+    float: left;
+    width: 100px;
+    height: 400px;
+    background: blue;
+}
+#right_sidebar{
+    float: right;
+    width: 100px;
+    height: 400px;
+    background: orange;
+}
+#content{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+    background: #fff;
+}

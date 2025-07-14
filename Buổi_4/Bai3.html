@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Đăng ký du lịch</title>
+    <style>
+        table {
+            width: 45%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 2px solid black;   
+            text-align: center;
+            padding: 8px;
+        }
+        th {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            <font size="7" color="#2C6975">
+                <center><b>Đăng ký du lịch</b></center>
+            </font>
+        </caption>
+        <form>
+            <tr bgcolor="#FFEFD5">
+                <td style="text-align: left; color:blue;">Họ và tên</td>
+                <td style="text-align: left;"><input type="text" style="width:350px"></td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td style="text-align: left; color: blue;">Địa chỉ</td>
+                <td style="text-align: left;"><input type="text" style="width:300px"></td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td style="text-align: left; color:blue;">Điện thoại</td>
+                <td style="text-align: left;"><input type="text" style="width:300px"></td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td style="text-align: left; color:blue;">Khách Việt Nam</td>
+                <td style="text-align: left;"><input type="checkbox"></td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td style="text-align: left; color:blue;">Chọn tour</td>
+                <td style="text-align: left;">
+                    <select>
+                        <option style="color:blueblue;">Buôn mê thuột - Gia Lai - Kontum</option>
+                        <option style="color:blueblue;">Bình Định - Đà Nẵng - Sài gòn</option>
+                        <option style="color:blueblue;">Hà Nội - Biển Đông - Hải Phòng</option>
+                    </select>
+                </td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td style="color:blue;">Phương tiện</td>
+                <td>
+                    <input type="radio" name="pt">Máy bay
+                    <input type="radio" name="pt">Xe ô tô
+                </td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td colspan="2">
+                    <fieldset style = "text-align:left">
+                        <legend style="color:blue;" ><i>Số lượng đoàn khách</i></legend>
+                        <p align : center>Người lớn<input type="text" size="3" > 
+                        Trẻ em  <input type="text" size="3"></p>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td style="color:blue;">Ghi chú thêm</td>
+                <td>
+                    <select size="2">
+                        <option>Có 2 trẻ em dưới 6 tuổi</option>
+						<option>Có 2 người ăn chay</option>
+                    </select>
+                </td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td colspan="2">
+                    <center><input type="button" value="Đồng ý"></center>
+                </td>
+            </tr>
+            <tr bgcolor="#FFEFD5">
+                <td colspan="2" style="color: green; text-align:center;">
+                    Bạn đã đăng ký thành công!!!
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Bootstrap
+B1: Đưa vào file HTML đường link trực tuyến
+B2: 
+
+class="rounded"  :bo góc hình
+class="rounded-circle"  :bo góc tròn
+class="img-thumbnail" :nổi ảnh
+class="float - left": căn trái
+class="float - right": căn phải

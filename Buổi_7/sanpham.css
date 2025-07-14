@@ -1,0 +1,19 @@
+.item{
+    display: flex;
+    width: 220px;
+    height: 280px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.item-img{
+    margin: 20px 10px 10px 20px;
+}
+.item-text{
+    color: blue;
+    text-align: center;
+}
+.item-price{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+/* Tiêu đề công ty */
+h1 {
+    text-align: center;
+    color: #FF1493; 
+    font-size: 36px;
+}
+b{
+	background-color: #FF1493;
+	text: white;
+
+}
+
+.A {
+	display: inline-block
+}

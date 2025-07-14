@@ -1,0 +1,21 @@
+h3{
+    color: green;
+    background-color: greenyellow;
+    text-align: center;
+}
+#mau{
+    text-align: center;
+}
+
+#mau1{
+    color: blue;
+    text-align: center;
+
+}
+#mau2{
+    text-align:left;
+    color: red;
+}
+#mau3{
+    text-align:right;
+}

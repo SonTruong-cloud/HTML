@@ -1,0 +1,37 @@
+<HTML> 
+    <HEAD> 
+    <script Language = "JavaScript" src="bai35.js"></script> 
+<style>
+    .content{
+        display: flex;
+        justify-content:space-around;
+    }
+    iframe{
+        border: none;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+    }
+    #gt,#st,#da{
+        width: 100px;
+        margin: 5px;
+    }
+</style>
+    </HEAD> 
+    <body>
+        <div class="content">
+            <div>
+                <!-- Các nút chọn để thay đổi giao diện -->
+                <input type="button" value="Giới thiệu" name="giatri" id="gt"  onclick="doimau(1, 'bai34.html')"><br>
+                <input type="button" value="Sở thích" name="giatri" id="st" onclick="doimau(2, 'bai35.html')"><br>
+                <input type="button" value="Dự án đã làm" name="giatri" id="da" onclick="doimau(3, 'bai2.html')">
+            </div>
+            <iframe id="frame" src="">
+            </iframe>
+        </div>
+    
+        <!-- iframe để thay đổi nội dung theo giao diện -->
+
+
+</body>
+</html>
